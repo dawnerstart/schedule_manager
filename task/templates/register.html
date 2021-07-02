@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>注册</title>
+	<!-- Template CSS -->
+	<link rel="stylesheet" href="assets/css/style-starter.css">
+	<!-- Template CSS -->
+	
+	<!-- Template CSS -->
+
+</head>
+<body>
+<!--顶部-->
+	<div class="template">
+		<header id="site-header" class="fixed-top">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-dark stroke">
+					<a class="navbar-brand" href="index.html">
+						<span class="fa fa-lightbulb-o"></span> 拂晓日程
+					</a>
+					<button class="navbar-toggler bg-gradient" type="button" data-toggle="collapse"
+						data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+						aria-label="Toggle navigation"><span class="navbar-toggler-icon fa fa-bars"> </span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">主页 <span class="sr-only">(current)</span></a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link effect-3" href="register.html">注册</a>
+							</li>
+						
+							<li class="nav-item">
+								<a class="nav-link effect-3" href="login.html">登录</a>
+							</li>
+							
+						</ul>
+
+					</div>
+				</nav>
+			</div>
+		</header>
+	</div>
+	<!--顶部-->
+	<!-- 注册信息 -->
+	<section class="w3l-inner-page-main">
+		<div class="breadcrumb-infhny">
+		  <div class="container">
+			<nav aria-label="breadcrumb">
+			  <h2 class="hny-title text-center">注册</h2>
+			  <ol class="breadcrumb mb-0">
+				<li><a href="index.html">主页</a>
+				  <span class="fa fa-angle-double-right"></span></li>
+				<li class="active">注册</li>
+			  </ol>
+			</nav>
+		  </div>
+		</div>
+	  </section>
+	  <!-- 正式注册 -->
+	<section class="w3l-banner-main">
+		<div style="text-align:center;" >
+			<form action="http://task.dawner.site/server/register/" method="post" >
+				#{% csrf_token %}
+				<h3 class="hny-title text-center mb-lg-5 mb-4" data-aos="fade-down">Leave us a Message</h3>
+
+					<input type="text" name="username" id="w3lName" placeholder="username" required="" ><br><br>
+					<input type="password" name="password" id="w3lName" placeholder="password" required="" ><br><br>
+					<input type="date" name="age" id="w3lName" placeholder="age" required="" ><br><br>
+					<input type="email" name="email" id="w3lSender" placeholder="Email*" required=""><br><br>
+					<input type="text" name="phone" id="w3lName" placeholder="phone" required=""><br><br>
+					<input type="text" name="address" id="w3lName" placeholder="address" required="" ><br><br>
+					<input type="submit" value="注册">
+
+			</form>
+		</div>
+	</section><br><br>
+<!-- footer -->
+<div class="footer"></div>
+<script type="text/javascript">
+	$(function(){
+		$(".footer").load("footer.html");
+	});
+</script>
+<!-- footer -->
+	
+</body>
+<!-- style -->
+<style type="text/css">
+    input[type="text"]
+    {
+    width:200px;
+	height:50px;
+    }
+	input[type="email"]
+    {
+	width:200px;
+	height:50px;
+    }
+	input[type="submit"]
+	{
+	width:200px;
+	height:50px;
+	}
+</style>
